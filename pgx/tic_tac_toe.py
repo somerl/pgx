@@ -118,6 +118,10 @@ animal=State()
 
 arr = TicTacToe()
 
+print(animal)
+
+print(animal.current_player)
+
 #arr._step(animal, 1, 2)
 
 #print(animal._board)
