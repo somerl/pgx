@@ -113,3 +113,15 @@ def _observe(state: State, player_id: Array) -> Array:
     )
 
     return jnp.stack(plane(x), -1)
+
+animal=State()
+
+arr = TicTacToe()
+
+#arr._step(animal, 1, 2)
+
+#print(animal._board)
+
+#_step(animal, 3)
+
+#print(_win_check(animal._board, 1))

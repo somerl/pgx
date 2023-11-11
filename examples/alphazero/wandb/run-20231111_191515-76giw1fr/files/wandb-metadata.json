@@ -1,0 +1,53 @@
+{
+    "os": "Linux-6.2.0-1015-azure-x86_64-with-glibc2.31",
+    "python": "3.10.8",
+    "heartbeatAt": "2023-11-11T19:15:15.522831",
+    "startedAt": "2023-11-11T19:15:15.034233",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "env_id=go_9x9",
+        "seed=0"
+    ],
+    "state": "running",
+    "program": "/workspaces/pgx/examples/alphazero/train.py",
+    "codePathLocal": "train.py",
+    "codePath": "examples/alphazero/train.py",
+    "git": {
+        "remote": "https://github.com/somerl/pgx",
+        "commit": "b410c6f87fd93df6eda1f6af6ef6ce5847ef471f"
+    },
+    "email": "134976843+somerl@users.noreply.github.com",
+    "root": "/workspaces/pgx",
+    "host": "codespaces-2a8fcb",
+    "username": "codespace",
+    "executable": "/home/codespace/.python/current/bin/python3",
+    "cpu_count": 1,
+    "cpu_count_logical": 2,
+    "cpu_freq": {
+        "current": 3222.608,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3240.835,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3204.381,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 31.32598876953125,
+            "used": 13.312602996826172
+        }
+    },
+    "memory": {
+        "total": 7.744121551513672
+    }
+}
