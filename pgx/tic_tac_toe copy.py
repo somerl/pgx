@@ -15,17 +15,12 @@
 import jax
 import jax.numpy as jnp
 
-import pgx.core as core
-from pgx._src.struct import dataclass
+import pgx
 from pgx._src.types import Array, PRNGKey
 
-FALSE = jnp.bool_(False)
-TRUE = jnp.bool_(True)
-
-import pgx
 
 seed = 42
-batch_size = 10
+batch_size = 1
 key = jax.random.PRNGKey(seed)
 
 
@@ -48,8 +43,13 @@ keys = jax.random.split(subkey, batch_size)
 state = init_fn(keys)
 
 # Run random simulation
-while not (state.terminated | state.truncated).all():
+
+ii = 0
+
+while ii < 4:
+#while not (state.terminated | state.truncated).all():
     key, subkey = jax.random.split(key)
     action = act_randomly(subkey, state.observation, state.legal_action_mask)
     state = step_fn(state, action)  # state.reward (2,)
     print(state)
+    ii+=1
