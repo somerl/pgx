@@ -1,0 +1,26 @@
+2023-11-12 11:26:46,424 INFO    MainThread:15887 [wandb_setup.py:_flush():76] Current SDK version is 0.16.0
+2023-11-12 11:26:46,424 INFO    MainThread:15887 [wandb_setup.py:_flush():76] Configure stats pid to 15887
+2023-11-12 11:26:46,425 INFO    MainThread:15887 [wandb_setup.py:_flush():76] Loading settings from /home/codespace/.config/wandb/settings
+2023-11-12 11:26:46,425 INFO    MainThread:15887 [wandb_setup.py:_flush():76] Loading settings from /workspaces/pgx/examples/alphazero/wandb/settings
+2023-11-12 11:26:46,425 INFO    MainThread:15887 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-11-12 11:26:46,425 INFO    MainThread:15887 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-11-12 11:26:46,425 INFO    MainThread:15887 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'examples/alphazero/train.py', 'program_abspath': '/workspaces/pgx/examples/alphazero/train.py', 'program': '/workspaces/pgx/examples/alphazero/train.py'}
+2023-11-12 11:26:46,425 INFO    MainThread:15887 [wandb_init.py:_log_setup():524] Logging user logs to /workspaces/pgx/examples/alphazero/wandb/run-20231112_112646-90ln1x04/logs/debug.log
+2023-11-12 11:26:46,426 INFO    MainThread:15887 [wandb_init.py:_log_setup():525] Logging internal logs to /workspaces/pgx/examples/alphazero/wandb/run-20231112_112646-90ln1x04/logs/debug-internal.log
+2023-11-12 11:26:46,426 INFO    MainThread:15887 [wandb_init.py:init():564] calling init triggers
+2023-11-12 11:26:46,426 INFO    MainThread:15887 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {'env_id': 'go_9x9', 'seed': 0, 'max_num_iters': 400, 'num_channels': 128, 'num_layers': 6, 'resnet_v2': True, 'selfplay_batch_size': 1024, 'num_simulations': 32, 'max_num_steps': 256, 'training_batch_size': 4096, 'learning_rate': 0.001, 'eval_interval': 5}
+2023-11-12 11:26:46,426 INFO    MainThread:15887 [wandb_init.py:init():614] starting backend
+2023-11-12 11:26:46,427 INFO    MainThread:15887 [wandb_init.py:init():618] setting up manager
+2023-11-12 11:26:46,434 INFO    MainThread:15887 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-11-12 11:26:46,440 INFO    MainThread:15887 [wandb_init.py:init():624] backend started and connected
+2023-11-12 11:26:46,443 INFO    MainThread:15887 [wandb_init.py:init():716] updated telemetry
+2023-11-12 11:26:46,458 INFO    MainThread:15887 [wandb_init.py:init():749] communicating run to backend with 90.0 second timeout
+2023-11-12 11:26:46,867 INFO    MainThread:15887 [wandb_run.py:_on_init():2254] communicating current version
+2023-11-12 11:26:46,943 INFO    MainThread:15887 [wandb_run.py:_on_init():2263] got version response 
+2023-11-12 11:26:46,943 INFO    MainThread:15887 [wandb_init.py:init():800] starting run threads in backend
+2023-11-12 11:26:47,014 INFO    MainThread:15887 [wandb_run.py:_console_start():2233] atexit reg
+2023-11-12 11:26:47,014 INFO    MainThread:15887 [wandb_run.py:_redirect():2088] redirect: wrap_raw
+2023-11-12 11:26:47,014 INFO    MainThread:15887 [wandb_run.py:_redirect():2153] Wrapping output streams.
+2023-11-12 11:26:47,014 INFO    MainThread:15887 [wandb_run.py:_redirect():2178] Redirects installed.
+2023-11-12 11:26:47,015 INFO    MainThread:15887 [wandb_init.py:init():841] run started, returning control to user process
