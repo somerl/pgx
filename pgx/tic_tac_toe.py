@@ -26,7 +26,7 @@ TRUE = jnp.bool_(True)
 @dataclass
 class State(core.State):
     current_player: Array = jnp.int32(0)
-    observation: Array = jnp.zeros((3, 3, 2), dtype=jnp.bool_)
+    observation: Array = jnp.zeros((2, 2, 2), dtype=jnp.bool_)
     rewards: Array = jnp.float32([0.0, 0.0])
     terminated: Array = FALSE
     truncated: Array = FALSE
@@ -80,6 +80,7 @@ def _init(rng: PRNGKey) -> State:
 
 def _step(state: State, action: Array) -> State:
     state = state.replace(_board=state._board.at[action].set(state._turn))  # type: ignore
+    state = state.replace(_board=state._board.at[1].set(state._turn))
     won = _win_check(state._board, state._turn)
     reward = jax.lax.cond(
         won,
@@ -114,13 +115,13 @@ def _observe(state: State, player_id: Array) -> Array:
 
     return jnp.stack(plane(x), -1)
 
-animal=State()
+#animal=State()
 
-arr = TicTacToe()
+#arr = TicTacToe()
 
-print(animal)
+#print(animal)
 
-print(animal.current_player)
+#print(animal.current_player)
 
 #arr._step(animal, 1, 2)
 

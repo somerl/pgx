@@ -15,6 +15,7 @@
 import jax
 import jax.numpy as jnp
 
+
 import pgx
 from pgx._src.types import Array, PRNGKey
 
@@ -46,10 +47,11 @@ state = init_fn(keys)
 
 ii = 0
 
-while ii < 4:
+while ii < 2:
 #while not (state.terminated | state.truncated).all():
     key, subkey = jax.random.split(key)
     action = act_randomly(subkey, state.observation, state.legal_action_mask)
     state = step_fn(state, action)  # state.reward (2,)
-    print(state)
+    print(state)   
     ii+=1
+
